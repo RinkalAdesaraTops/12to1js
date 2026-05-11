@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // logical operator - && and,|| or,!not
+        let a=34
+        let b=5
+        let c=80
+        document.write('<br> a > b && a > c - '+(a>b && a>c))
+        document.write('<br> a > b || a > c - '+(a>b || a>c))
+        document.write('<br> a > b  - ',(a>b))
+        document.write('<br> !a > b  - '+!(a>b))
+
+        // typeof 
+        document.write('<br>Numberic value 10 is '+typeof(10))
+        document.write('<br>Numberic value 10.25 is '+typeof(10.25))
+        document.write('<br>Character value R is '+typeof('R'))
+        document.write('<br>String value sdgfhjsgd is '+typeof("sdgfhjsgd"))
+        document.write('<br>Boolean value '+typeof(true))
+        document.write('<br>Boolean value '+typeof(false))
+        let x
+        document.write('<br>x is '+typeof(x))
+        document.write('<br>Array '+typeof([]))
+        document.write('<br>Object '+typeof({}))
+        // ternary - ?:
+        // (condition)?trueblock: false block
+        a=100
+        b=20
+        document.write((a>b)?"<br>A is maximum":"<br>B is maximum")
+        let age=15
+        document.write((age>=18)?"<br>Eligible 4 vote":"<br>Not Eligible 4 vote")
+        let no=37
+        document.write((no%2==0)?"<br>Even no":"<br>Odd no")
+    </script>
+</body>
+</html>
