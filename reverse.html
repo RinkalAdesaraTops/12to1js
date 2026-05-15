@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // palindrom no 
+        let no=148
+        //reverse 151
+        let rev=0
+        let f=no
+        while(no>0){
+            let r=no%10 //7 4 1
+            console.log('reminder is '+r);           
+            no = Math.floor(no/10)
+            console.log("no is ",no);           
+            rev = (rev*10) + r // 7*10=70+4=74 74*10=740 +1 = 741 
+            document.write('<br')
+        }
+        document.write('<br>Reverse no is '+rev)
+        if(f==rev){
+            document.write('<br>It is palindrom')
+        } else {
+            document.write('<br>It is not palindrom')
+        }
+        // 741
+    </script>
+</body>
+</html>
