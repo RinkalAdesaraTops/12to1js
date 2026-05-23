@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 145 = 1 4 5 sum of digits
+        function sum_digit(n) {
+            let sum = 0
+            while (n > 0) {
+                let r = n % 10
+                n = Math.floor(n / 10)
+                sum = sum + r
+            }
+            document.write('<br>Sum of digits are ' + sum)
+            // return sum
+        }
+        sum_digit(156)
+        // document.write('<br>Sum of digits are '+sum_digit(156))
+    </script>
+</body>
+
+</html>

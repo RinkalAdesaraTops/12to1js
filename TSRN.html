@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)TNRN
+        // 2)TSRN
+        function area(l,b,h){
+            return l*b*h
+            // document.write('<br>Area of rectangle is '+(l*b*h))
+        }
+        function area_circle(a){
+            const pi=3.14
+            return pi*a**2
+            // document.write('<br>Area of circle is '+(pi*a**2))
+        }
+        // area of triangle - h*b / 2
+        let a = prompt("Enter a:")
+        let b = prompt("Enter b:")
+        let c = prompt("Enter c:")
+        document.write('<br>Area of Rectangle is '+area(a,b,c))
+        document.write('<br>Area of Circle is '+area_circle(12))       
+        // area(30,10,5)
+        // 3)TNRS
+        function mult(){
+            return a*b
+        } 
+        // let ans = mult()
+        // document.write('<br>Multiplication is '+ans)
+        document.write('<br>Multiplication is '+mult())
+        // 4)TSRS
+        function cube(p){
+            return p**3 
+        }
+        document.write('<br>Cube is '+cube(4))
+        
+    </script>
+</body>
+</html>
