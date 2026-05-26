@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2,3,4,5] //0 1 2 3
+        document.write('<br>'+arr)
+        //map function - doesnot change original array create a copy of array
+        let res = arr.map((i,j)=>{
+                // console.log("i is "+i);
+                // console.log("index is "+j);
+                return i*2
+        }) //4 6 8 10
+        document.write('<br>'+res)
+        arr = [10,20,22,30,40,12]
+        //filter - always return array
+        //find - always return single/first value
+        //includes -  always return boolean value
+        // searching
+        res = arr.filter((i,j)=>{
+                return i==20
+        })
+        res = arr.find((i,j)=>{
+                // console.log('index is '+j);
+                return i==20
+        })
+        // console.log(res);
+        // console.log('include is '+arr.includes(400));       
+        // console.log(res);
+        //some(or) & every(and)
+        // [10,20,25,30,40,20]
+        res = arr.some((i)=>{
+                return i%2==0
+            })
+        console.log(res);
+        res = arr.every((i)=>{
+                return i%2==0
+            })
+        // console.log(res);
+        // reduce & reduceRight function
+        // [10,20,22,30,40,12] a=10 b=20 a=prev b=next
+        ans = arr.reduce((prev,next)=>{
+                console.log('prev '+prev);
+                console.log('next '+next);
+                return prev+next
+        },100)  
+        document.write('<br>Sum is '+ans)
+        let max = arr.reduce((i,j)=>{ //i=10 j=20
+                if(j>i){ //20>10 12>40
+                    i=j //i=40
+                }
+                return i
+        })
+        document.write('<br>Maximum is '+max)
+    </script>
+</body>
+</html>
