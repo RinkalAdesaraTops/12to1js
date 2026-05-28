@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <select name="DSFSDF" id="">
+        <option value="">ABC</option>
+        <option value="">ABC</option>
+    </select>
+    <input type="text" name="username" id=""> -->
+    <div id="demo" class="b1">kgdfdfjkhg</div>
+    <div id="demo1" class="b1">dfgdfgdfg</div>
+    <div  class="b1">wetrw wtrw yuwetryu r</div>
+    <div class="b1">dfgdfgdfg</div>
+    <div class="b1">dfgdfgdfg</div>
+    <!-- document object model -->
+    <script>
+        document.getElementById("demo").innerHTML = "<b>innerHTML -- Hello</b>"
+        // document.getElementById("demo").style.color="green"
+        // // camelcase 
+        // document.getElementById("demo").style.backgroundColor="yellow"
+        document.getElementById("demo1").innerText = "<b>innerText -- Hi</b>"
+        // let a = document.getElementsByClassName('b1')
+        let a = document.getElementsByTagName('div')
+        // getElementsByName
+        console.log(a);
+        for(let i=0;i<a.length;i++){
+            if(i%2 == 0){
+                a[i].style.color="blue"
+            } else {
+                a[i].style.color="green"
+            }
+        }
+        // a[0].style.color="purple"
+        // a[1].style.color="red"
+    </script>
+</body>
+</html>
