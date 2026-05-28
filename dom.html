@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    Country:
+    <select name="country" id="">
+        <option value="">--Select Country--</option>
+        <option value="ind">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
     <!-- <select name="DSFSDF" id="">
         <option value="">ABC</option>
         <option value="">ABC</option>
@@ -28,7 +35,8 @@
         // getElementsByName
         console.log(a);
         for(let i=0;i<a.length;i++){
-            if(i%2 == 0){
+            //i=0 1 2 3 4 
+            if(i%2 == 0){ //0%2 1%2 2%2 3%2 4%2
                 a[i].style.color="blue"
             } else {
                 a[i].style.color="green"
