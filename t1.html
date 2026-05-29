@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Country:
+    <select name="country" id="">
+        <option value="">--Select Country--</option>
+        <option value="ind">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+    <script>
+        let a = document.getElementsByName('country')
+        console.log(a);
+        for (let i = 0; i < a[0].length; i++) {
+            if (i % 2 == 0) {
+                a[0][i].style.color = "blue"
+            } else {
+                a[0][i].style.color = "red"
+            }
+        }
+    </script>
+</body>
+
+</html>
