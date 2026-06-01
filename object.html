@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=10
+        // let a = ["abc","dfgd"]
+        // key-value pair
+        let a = {
+            "rollno":101,
+            "name":"sdgf",
+            "age":25,
+            "surname":"uewyr"       
+        }
+        //add new key-value in object 
+        a.lastname = "Xyz"
+        // a["lastname"] = "xyz"
+        for(var x in a){
+            // document.write('<br>Your ',x," is ",a[x])
+            document.write('<br>Your '+x+" is "+a[x])
+        }
+        document.write('<br><hr>')
+        //update
+        a.age = 30
+        for(var x in a){
+            document.write('<br>Your '+x+" is "+a[x])
+        }
+        //delete
+        delete a.surname
+        document.write('<br><hr>')
+
+        for(var x in a){
+            document.write('<br>Your '+x+" is "+a[x])
+        }
+        // document.write('<br>Roll No is ',a.rollno)
+        // document.write('<br>Name is ',a["name"])
+    </script>
+</body>
+</html>

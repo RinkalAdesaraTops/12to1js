@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = {
+            "rollno":101,
+            "name":"sdgf",
+            "age":25,
+            "surname":"uewyr",
+            "dispAll":function(){
+                return this.name + "---"+this.age
+            },
+            // getter & setter method
+            get dispSurname(){
+                return this.surname
+            },
+            set updateSm(a){
+                this.surname = a
+            }
+        }
+        document.write('<br>Your name & age is '+a.dispAll())
+        document.write('<br>Your surname is '+a.dispSurname)
+        a.updateSm = "TEST"
+        document.write('<br>Your updated surname is '+a.dispSurname)
+
+    </script>
+</body>
+</html>
