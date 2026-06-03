@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ES6 
+        let arr = ["shdgf","ureyt","avxy","pqr","tesr"]
+        let arr2 = ["abc","pqr"]
+        //merge array ["shdgf","ureyt","avxy","pqr","tesr","abc","pqr"]
+        // ... spread operator - all elements
+        // spreading & merging
+        let merge_arr = [...arr,...arr2,10,20,30]
+        document.write('<br>'+merge_arr)
+        // arr[0]
+        //destructuring
+        // let s=10
+        // let [a,b,x,p,q] = arr
+        // document.write('<br>A is ',a,"----",b)
+        // p stores - remaining elements 
+        let [a,b,...p] = arr //rest of operator
+        document.write('<br>A is ',a,"----",b)
+        document.write('<br>p is ',p)
+        // document.write('<br>A is '+a+"----"+x)
+        // document.write('<br>X is '+x)
+
+        // object destructuring
+        let emp = {
+            "name":"Test",
+            "age":25,
+            "salary":45600,
+            "lastname":"euryt"
+        }
+        let {name,salary} = emp
+        document.write('<br>Name is '+name)
+        document.write('<br>Salary is '+salary)
+    </script>
+</body>
+</html>
