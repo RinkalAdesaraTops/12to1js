@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Promise Example
+        //pending
+        //fulfilled/resolve 
+        //rejected
+        let pr = new Promise((res,rej)=>{
+                res("Promise done")
+                rej("Promise rejected")
+        }).then((e)=>console.log("Success -- "+e))
+        .catch((e)=>console.log("Error generated -- "+e))
+
+        let pr1 = new Promise((a,b)=>{
+            let age = 15
+            if(age>=18){
+                a("Eligible 4 vote")
+            } else {
+                b("Not eligible 4 vote")
+            }
+        }).then((msg)=>console.log(msg))
+        .catch((msg)=>console.log(msg))
+        // function inside function called nested or callback function
+        // callback hell problem
+        //solution - promises / async-await
+        // const add = ()=>{
+        //     minus()
+        // }
+        // const minus = ()=>{
+        //     div()
+        // }
+        // const div = async()=>{
+        //     await sdhfgsfgshj
+        //     mult()
+        // }
+        // const mult = ()=>{
+            
+        // }
+        // add()
+    </script>
+</body>
+</html>
