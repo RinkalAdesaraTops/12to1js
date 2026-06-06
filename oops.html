@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Object oriented programming
+        //4 principles
+        //1)class & object
+        //2)Inheritance
+        //3)Polymorphism
+        //4)Data abstraction - data hiding
+        //  encapsulation - wrapping up of data into single unit
+        class emp{
+            constructor(){ //special function 
+                //it is automatically called when object is created...
+                console.log('constructor called...');               
+                this.a = 10
+                this.b=20
+            }
+            //normal function 
+            minus = ()=>{
+                document.write('<br>MInus is '+(this.a-this.b))
+
+            }
+            add = ()=>{
+                console.log('add func called...');               
+                document.write('<br>Addition is '+(this.a+this.b))
+                this.minus()
+            }
+            
+        }
+        let e1 = new emp()
+        e1.add()
+    </script>
+</body>
+</html>

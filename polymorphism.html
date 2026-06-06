@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // polymorphism = one name multiple form
+        //function overriding
+        class parent {
+            constructor() {
+                console.log('parent constructor called..');
+            }
+            area(l,b){
+                document.write('<br>Area of rectangle is '+(l*b))
+            }
+        }
+        class child extends parent {
+            constructor() {
+                super()
+                console.log('child constructor called..');
+            }
+            area(a,b){
+                super.area(45,60)
+                // super.area(a,b)
+                document.write('<br>Area of triangle is '+(a*b/2))
+            }
+        }
+        let obj = new child()
+        obj.area(4,5)
+    </script>
+</body>
+
+</html>

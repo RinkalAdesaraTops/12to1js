@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class emp{
+            // constructor(){ //default constructor
+            //     console.log('constructor called...');               
+            //     this.a = 10
+            //     this.b=20
+            // }
+            constructor(p,q){ //parameterized constructor
+                console.log('constructor called...');               
+                this.a = p
+                this.b = q
+            }
+            //normal function 
+            add = ()=>{
+                console.log('add func called...');               
+                document.write('<br>Addition is '+(this.a+this.b))
+            }
+        }
+        let e1 = new emp(25,12)
+        e1.add()
+    </script>
+</body>
+</html>
